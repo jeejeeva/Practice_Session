@@ -1,18 +1,34 @@
-class Employee
+public class Employee extends Office 
 {
-    static String address = "7, neru street, chennai";
-    static int companyOpenTi = 10;
-    String empName;
-    int empID;
 
-public static void main(String[] args)
+
+public static void main (String[] args)
 {
-    Employee emp1 = new Employee();
-    emp1.empName = "venkiy";
-    emp1.empID = 7826;
-    System.out.println(emp1.empName);
-    Employee emp2 = new Employee();
-    
+
+    Employee details = new Employee();
+    details.name();
+    details.dob();
+    details.location();
+
+    Office own = new Employee();
+    own.location();
+    // own.status();    this method not accessable for office object.
+}
+public void name ()
+{
+    System.out.println("Balu");
+}
+public void dob()
+{
+    System.out.println("12/02/1998");
+}
+public void location()
+{
+    System.out.println("Namakkal");
+}
+public void status()
+{
+    System.out.println("unmarried");
 }
 
 }
