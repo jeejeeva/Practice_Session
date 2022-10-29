@@ -1,29 +1,43 @@
-package kerala.nkl;
-import kerala.kochin.Company;
-public class Branch extends Company
-{
-public Branch()
-{
-    
-    System.out.println("Namakkal branch office");
-}
-public Branch (int cc)
-{
-    super(cc);
-    System.out.println("Branch employee id no. ="+cc);
-}
-public static void main(String[] args)
+public class Branch extends Office 
 {
 
-    Branch off = new Branch();
-    off. salary();
-    Branch office = new Branch(1055);
-    
-}
-public void salary ()
+public static void main (String[] args)
 {
-    int salary = 18000;
-    System.out.println("Employee salary = "+salary);
-    super.salary();
+
+    Branch emp = new Branch();
+    emp.name();
+    emp.location();
+    emp.dob();
+
+    emp.name("pokka");
+    emp.location("coimbatore");
+    emp.dob("12/02/1998");
+}
+public String name (String empname)
+{
+    System.out.println("Employee Name = "+ empname);
+    return empname;
+}
+public void name ()
+{
+    System.out.println("jeeva");
+}
+public String dob(String empDob)
+{
+    System.out.println("employee DOB = "+empDob);
+    return empDob;
+}
+public void dob ()
+{
+    System.out.println("14/02/1998");   
+}
+public String location(String empLocation)
+{
+    System.out.println("Employee name = "+empLocation);
+    return empLocation;
+}
+public void location ()
+{
+    System.out.println("Namakkal");
 }
 }
