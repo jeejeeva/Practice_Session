@@ -20,30 +20,7 @@ public class Alphabets {
 	}
 
 
-	private void printM() {
-		for(int row =1;row<=9;row++)
-		{
-			System.out.print(" ");
-			System.out.print("  ");
-			for(int col=1;col<=9;col++)
-			{
-				
-				if(col==1) 
-					System.out.print("* ");
-				
-				else if(row==col && col<=5) 
-					System.out.print("* ");
-				
-				else if(row + col==10 && row<=col)
-					System.out.print("* ");
-				else if(col==9)
-					System.out.print("* ");
-				else
-				System.out.print("  ");
-			}
-			System.out.println();
-		}
-	}
+
 	
 	
 	private void printJ() {
@@ -165,6 +142,30 @@ System.out.println();
 		
 	}
 	
+	private void printM() {
+		for(int row =1;row<=9;row++)
+		{
+			System.out.print(" ");
+			System.out.print("  ");
+			for(int col=1;col<=9;col++)
+			{
+				
+				if(col==1) 
+					System.out.print("* ");
+				
+				else if(row==col && col<=5) 
+					System.out.print("* ");
+				
+				else if(row + col==10 && row<=col)
+					System.out.print("* ");
+				else if(col==9)
+					System.out.print("* ");
+				else
+				System.out.print("  ");
+			}
+			System.out.println();
+		}
+	}
 
 
 }
